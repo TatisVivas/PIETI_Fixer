@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity">
+
+    <TextView
+        android:id="@+id/textServicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="172dp"
+        android:text="Servicios"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:text="Soluciones para el hogar, siempre que necesites"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textServicios" />
+
+    <Button
+        android:id="@+id/fontaneriaButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="36dp"
+        android:text="Fontanería"
+        app:layout_constraintEnd_toStartOf="@+id/electricistaButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/limpiezaButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="168dp"
+        android:text="Limpieza"
+        app:layout_constraintEnd_toStartOf="@+id/electricistaButton"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/electricistaButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="36dp"
+        android:text="Instalaciones Eléctricas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fontaneriaButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/pinturaButton"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        android:text="Pintura"
+        app:layout_constraintStart_toEndOf="@+id/fontaneriaButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

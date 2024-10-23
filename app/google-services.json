@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "523422491646",
+    "firebase_url": "https://fixer-pieti-default-rtdb.firebaseio.com",
+    "project_id": "fixer-pieti",
+    "storage_bucket": "fixer-pieti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523422491646:android:8d0dfa0cc7f9cef44396af",
+        "android_client_info": {
+          "package_name": "com.example.fixer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8TVzL7g_vuxb7EMXA6I2jyXVIO9LHn4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
