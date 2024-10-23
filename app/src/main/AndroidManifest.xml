@@ -22,9 +22,6 @@
             android:name=".RolSelectionActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeFixerActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
