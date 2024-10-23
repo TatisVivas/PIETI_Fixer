@@ -1,5 +1,7 @@
 package com.example.fixer
 
+import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +17,13 @@ class CustomerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCustomerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.activityButton.setOnClickListener {
+            startActivity(Intent(baseContext, ListServicesActivity::class.java))
+        }
+        binding.profileButton.setOnClickListener {
+            startActivity(Intent(baseContext, ProfileCustomerActivity::class.java))
+        }
+
 
 
 

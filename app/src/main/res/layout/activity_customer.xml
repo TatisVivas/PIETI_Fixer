@@ -5,28 +5,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:background="@android:color/white"
     tools:context=".CustomerActivity">
+    <ImageView
+        android:id="@+id/fixer"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/framelayout" />
 
     <TextView
         android:id="@+id/textServicios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="172dp"
         android:text="Servicios"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/fixer" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
         android:text="Soluciones para el hogar, siempre que necesites"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -39,7 +47,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="36dp"
         android:text="Fontanería"
-        android:backgroundTint="#337FBF"
+        android:backgroundTint="#006C81"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/electricistaButton"
         app:layout_constraintHorizontal_bias="0.5"
@@ -52,7 +60,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="168dp"
         android:text="Limpieza"
-        android:backgroundTint="#337FBF"
+        android:backgroundTint="#006C81"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/electricistaButton"
         app:layout_constraintHorizontal_bias="0.505"
@@ -65,7 +73,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="36dp"
         android:text="Instalaciones Eléctricas"
-        android:backgroundTint="#337FBF"
+        android:backgroundTint="#006C81"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -80,9 +88,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         android:text="Pintura"
-        android:backgroundTint="#337FBF"
+        android:backgroundTint="#006C81"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/fontaneriaButton"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#7AE8EBEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/servicesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_grid_negro"
+            android:text="Servicios"
+            android:backgroundTint="@android:color/white"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/activityButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_playlist_add_check_24"
+            android:text="Actividad"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#006C81"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_profile"
+            android:text="Perfil"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#006C81"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,5 +2,9 @@
     <string name="app_name">Fixer</string>
     <string name="register_text"><u>Registrarme</u></string>
     <string name="sesion_text"><u>Iniciar Sesion</u></string>
+    <string name="title_activity_profile_customer">ProfileCustomerActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>
