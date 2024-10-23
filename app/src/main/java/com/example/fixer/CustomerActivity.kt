@@ -23,6 +23,9 @@ class CustomerActivity : AppCompatActivity() {
         binding.profileButton.setOnClickListener {
             startActivity(Intent(baseContext, ProfileCustomerActivity::class.java))
         }
+        binding.fontaneriaButton.setOnClickListener {
+            startActivity(Intent(baseContext, CurrentServiceActivity::class.java))
+        }
 
 
 

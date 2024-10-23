@@ -17,5 +17,8 @@ class ListServicesActivity : AppCompatActivity() {
         binding.servicesButton.setOnClickListener {
             startActivity(Intent(baseContext, CustomerActivity::class.java))
         }
+        binding.profileButton.setOnClickListener {
+            startActivity(Intent(baseContext, ProfileCustomerActivity::class.java))
+        }
     }
 }

@@ -130,7 +130,7 @@
         android:layout_marginEnd="134dp"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#DEDEE4"
-        android:text="Volver al menú"
+        android:text="Volver a servicios"
         android:textColor="#006C81"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
