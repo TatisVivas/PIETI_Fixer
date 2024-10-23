@@ -13,6 +13,7 @@ class CustomerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityCustomerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
