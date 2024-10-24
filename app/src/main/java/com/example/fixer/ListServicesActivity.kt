@@ -20,5 +20,14 @@ class ListServicesActivity : AppCompatActivity() {
         binding.profileButton.setOnClickListener {
             startActivity(Intent(baseContext, ProfileCustomerActivity::class.java))
         }
+        binding.calificarServicio.setOnClickListener {
+            val intent = Intent(this, RateServiceActivity::class.java)
+            intent.putExtra("workerImageResId", R.drawable.johndoe) // Replace with actual image resource ID
+            intent.putExtra("serviceDescription", "Descripción del servicio")
+            startActivity(intent)
+        }
+        binding.volverAlMenu.setOnClickListener {
+            startActivity(Intent(baseContext, CustomerActivity::class.java))
+        }
     }
 }

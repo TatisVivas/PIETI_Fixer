@@ -61,7 +61,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calificar a servicios"
+            android:text="Volver al menú"
             android:id="@+id/volverAlMenu"
             android:layout_gravity="center"
             android:backgroundTint="#006C81"
