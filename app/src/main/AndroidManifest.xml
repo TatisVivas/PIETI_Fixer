@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Fixer"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileWorkerActivity"
+            android:exported="false" />
+        <activity
             android:name=".CurrentServiceActivity"
             android:exported="false" />
         <activity

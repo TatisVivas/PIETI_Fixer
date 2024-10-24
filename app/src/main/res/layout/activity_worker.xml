@@ -5,6 +5,68 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:background="@android:color/white"
     tools:context=".WorkerActivity">
+    <ImageView
+        android:id="@+id/fixer"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/framelayout" />
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#7AE8EBEB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/servicesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_notifications_negro"
+            android:text="Notificaciones"
+            android:textSize="10dp"
+            android:backgroundTint="@android:color/white"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/activityButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_playlist_add_check_24"
+            android:text="Actividad"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#006C81"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/baseline_profile"
+            android:text="Perfil"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#006C81"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
