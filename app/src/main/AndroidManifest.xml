@@ -16,6 +16,12 @@
         android:theme="@style/Theme.Fixer"
         tools:targetApi="31">
         <activity
+            android:name=".WorkerPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryServicesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileWorkerActivity"
             android:exported="false" />
         <activity

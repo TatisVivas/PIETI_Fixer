@@ -5,9 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:background="@android:color/white"
     tools:context=".ProfileWorkerActivity">
 
-
+    <ImageButton
+        android:id="@+id/volverAlMenu"
+        android:layout_width="45dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/baseline_exit_to_app_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixer" />
 
     <ImageButton
         android:id="@+id/editarFotoBoton"
@@ -16,11 +28,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="198dp"
         android:backgroundTint="@android:color/transparent"
         android:src="@drawable/baseline_edit_24"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutInfo"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMiPerfil"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fixer" />
 
@@ -49,8 +59,8 @@
 
     <ImageView
         android:id="@+id/imageViewPerfil"
-        android:layout_width="138dp"
-        android:layout_height="142dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/baseline_person_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,12 +153,12 @@
             android:textColor="@android:color/darker_gray" />
 
         <Button
-            android:id="@+id/volverAlMenu"
+            android:id="@+id/buttonVerHistorial"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@android:color/white"
-            android:text="Volver al menú"
+            android:text="Ver historial de servicios"
             android:textColor="@android:color/holo_blue_light" />
 
         <Button

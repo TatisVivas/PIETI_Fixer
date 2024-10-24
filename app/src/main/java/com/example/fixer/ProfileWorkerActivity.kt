@@ -43,7 +43,9 @@ class ProfileWorkerActivity : AppCompatActivity() {
         binding.volverAlMenu.setOnClickListener {
             startActivity(Intent(this, WorkerActivity::class.java))
         }
-
+        binding.buttonVerHistorial.setOnClickListener {
+            startActivity(Intent(this, HistoryServicesActivity::class.java))
+        }
         // Load image URI from SharedPreferences
         loadImageUri()
 
@@ -85,8 +87,9 @@ class ProfileWorkerActivity : AppCompatActivity() {
         val imageUri = sharedPreferences.getString("imageUri", null)
         if (imageUri != null) {
             val uri = Uri.parse(imageUri)
-            Glide.with(this).load(uri).into(binding.imageViewPerfil)
+            //Glide.with(this).load(uri).into(binding.imageViewPerfil)
+            binding.imageViewPerfil.setImageDrawable(resources.getDrawable(R.drawable.baseline_person_24))
         }
     }
-}
+
 }

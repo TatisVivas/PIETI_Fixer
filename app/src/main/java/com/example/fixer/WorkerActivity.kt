@@ -1,5 +1,6 @@
 package com.example.fixer
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,5 +14,11 @@ class WorkerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.activityButton.setOnClickListener {
+            startActivity(Intent(baseContext, ListServicesActivity::class.java))
+        }
+        binding.profileButton.setOnClickListener {
+            startActivity(Intent(baseContext, ProfileWorkerActivity::class.java))
+        }
     }
 }
