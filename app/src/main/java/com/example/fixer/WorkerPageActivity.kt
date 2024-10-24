@@ -13,8 +13,12 @@ class WorkerPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkerPageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         binding.volverAlMenu.setOnClickListener{
             startActivity(Intent(baseContext, WorkerActivity::class.java))
+        }
+        binding.profileButton.setOnClickListener{
+            startActivity(Intent(baseContext, ProfileWorkerActivity::class.java))
         }
     }
 }

@@ -15,7 +15,7 @@ class WorkerActivity : AppCompatActivity() {
         binding = ActivityWorkerBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.activityButton.setOnClickListener {
-            startActivity(Intent(baseContext, ListServicesActivity::class.java))
+            startActivity(Intent(baseContext, WorkerPageActivity::class.java))
         }
         binding.profileButton.setOnClickListener {
             startActivity(Intent(baseContext, ProfileWorkerActivity::class.java))
