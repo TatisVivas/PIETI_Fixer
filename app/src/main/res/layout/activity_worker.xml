@@ -8,6 +8,7 @@
     android:backgroundTint="#FFFFFF"
     android:background="@android:color/white"
     tools:context=".WorkerActivity">
+
     <ImageView
         android:id="@+id/fixer"
         android:layout_width="match_parent"
@@ -17,6 +18,96 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/framelayout" />
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_width="413dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:background="#B55D5D5D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixer" />
+
+    <TextView
+        android:id="@+id/requestTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tatiana ha solicitado un servicio de fontanería."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/divisor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hora: 10:00 am"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/requestTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Día: 11/08/2024"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Accept"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rejectButton"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/rejectButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reject"
+        android:backgroundTint="#F44336"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextView"
+        app:layout_constraintStart_toEndOf="@+id/acceptButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <View
+        android:id="@+id/divisorbottom"
+        android:layout_width="413dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#B55D5D5D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptButton" />
+
     <LinearLayout
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
@@ -64,9 +155,6 @@
             android:textStyle="bold"
             android:gravity="center" />
 
-
-
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
