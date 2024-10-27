@@ -36,5 +36,6 @@ class WorkerActivity : AppCompatActivity() {
             binding.acceptButton.setBackgroundColor(parseColor("#808080"))
             binding.rejectButton.setBackgroundColor(parseColor("#808080"))
         }
+        //aca van precios
     }
 }
