@@ -17,7 +17,9 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+tasks.register<Wrapper>("wrapper") {
+    gradleVersion = "8.7"
+}
     buildFeatures{
         viewBinding = true
     }
